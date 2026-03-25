@@ -1,5 +1,5 @@
 {
-  "name": "caja-gastro",
+  "name": "caja-gastro-1",
   "version": "1.0.0",
   "description": "Sistema de Caja POS para Gastronomía",
   "main": "server.js",
@@ -8,7 +8,7 @@
     "dev": "node server.js"
   },
   "keywords": ["pos", "caja", "gastronomia", "sistema"],
-  "author": "Tu Nombre",
+  "author": "Agust Caja",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"

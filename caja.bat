@@ -16,13 +16,13 @@ echo.
 cd /d "%~dp0"
 
 echo 🌐 Abriendo caja online...
-echo URL: https://caja-gastro.onrender.com
+echo URL: https://caja-gastro-1.onrender.com
 echo.
 echo ⚠️  NOTA: La primera carga puede tardar 30-60 segundos
 echo     (Render está despertando la instancia)
 echo.
 
-start https://caja-gastro.onrender.com
+start https://caja-gastro-1.onrender.com
 
 timeout /t 3 >nul
 
@@ -55,8 +55,8 @@ goto fin
 :estado_deploy
 echo.
 echo 📊 Verificando estado del deploy...
-echo URL: https://caja-gastro.onrender.com
-start https://caja-gastro.onrender.com
+echo URL: https://caja-gastro-1.onrender.com
+start https://caja-gastro-1.onrender.com
 echo ✅ Abriendo URL en navegador para verificar estado...
 goto fin
 
@@ -74,7 +74,7 @@ if errorlevel 1 (
 
 git add .
 git commit -m "Auto-update desde caja local - %date% %time%"
-git push origin main
+git push origin master
 
 if errorlevel 1 (
     echo ❌ Error al hacer push a GitHub
